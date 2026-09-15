@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Posts | Safi Graphics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="placeholder.css">
+  <link rel="stylesheet" href="contact-form.css">
+  <link rel="stylesheet" href="all-posts.css">
+  <link rel="stylesheet" href="posts-redesign.css">
+</head>
+
+<body class="all-posts-page">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container"><a class="navbar-brand" href="index.html">SAFI <span>GRAPHICS</span></a>
+      <div class="d-flex align-items-center gap-3"><a class="back-link" href="index.html#work">← Home</a><a
+          class="order-button" href="index.html#contact">آرڈر کریں <b>←</b></a></div>
+    </div>
+  </nav>
+  <main class="all-posts-main">
+    <section class="all-posts-hero">
+      <div class="hero-pattern"></div>
+      <div class="hero-star hero-star-one">✦</div>
+      <div class="hero-star hero-star-two">✦</div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="kicker">SAFI GRAPHICS • COMPLETE PORTFOLIO</p>
+            <h1>تمام<br><em>پوسٹس</em></h1>
+            <p>اسلامی، محفل، شادی اور خاص تقریبات کے لیے بنائی گئی میری تمام پوسٹس ایک جگہ دیکھیں۔</p><a
+              class="hero-back" href="index.html#work">← واپس Home پر جائیں</a>
+          </div>
+          <div class="col-lg-5">
+            <div class="portfolio-panel">
+              <p>SAFI GRAPHICS</p>
+              <div class="portfolio-stamp"><strong id="post-count">12</strong><span>CREATIVE<br>POST
+                  DESIGNS</span><i>✦</i></div><small>CLICK ANY POST TO VIEW<br>IN FULL SIZE</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="all-posts-gallery section-pad">
+      <div class="container">
+        <div class="gallery-toolbar">
+          <div>
+            <p class="kicker dark">EXPLORE THE COLLECTION</p>
+            <h2>آپ کے موقع کے<br><em>مطابق</em> design</h2>
+          </div>
+          <div class="gallery-note"><span>✦</span> کسی بھی post پر click کریں<br>اور اسے full size میں دیکھیں۔</div>
+        </div>
+        <div class="category-chips" aria-label="Post categories"><button class="active" data-filter="all">All
+            Posts</button><button data-filter="islamic">Islamic</button><button
+            data-filter="wedding">Wedding</button><button data-filter="mehfil">Mehfil</button><button
+            data-filter="events">Events</button></div>
+        <p id="filter-status" class="filter-status" aria-live="polite"></p>
+        <div id="post-gallery" class="row g-4"></div>
+        <div class="bottom-cta">
+          <p>اپنی custom post بنوانا چاہتے ہیں؟</p><a href="index.html#contact">ابھی رابطہ کریں <span>←</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="image-modal" class="image-modal" aria-hidden="true"><button id="modal-close" class="modal-close"
+      aria-label="بند کریں">×</button>
+    <div class="modal-content"><img id="modal-image" src="" alt="">
+      <div id="modal-placeholder" class="modal-placeholder"><span id="modal-category"></span><b
+          id="modal-placeholder-title"></b><i>✦</i><small>SAFI GRAPHICS</small></div>
+      <p id="modal-title"></p>
+    </div>
+  </div>
+  <script src="portfolio.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
